@@ -13,9 +13,15 @@
       ./cosmic.nix
       ./gaming.nix
     ];
-  boot.loader.grub.mirroredBoots = [
-    { devices = [ "nodev"]; path = "/boot"; }
-  ];
+  boot.loader.grub = {
+    enable = true;
+    zfsSupport = true;
+    efiSupport = true;
+    efiInstallAsRemovable = true;
+    mirroredBoots = [
+      { devices = [ "nodev"]; path = "/boot"; }
+    ];
+  };
   boot.initrd.postDeviceCommands = lib.mkAfter ''
     zfs rollback -r rpool/root@blank
   '';
