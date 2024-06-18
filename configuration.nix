@@ -23,7 +23,7 @@
     ];
   };
   boot.initrd.postDeviceCommands = lib.mkAfter ''
-    zfs rollback -r rpool/root@blank
+    zfs rollback -r zroot/root@blank
   '';
   users.users.max = {
     isNormalUser = true;
