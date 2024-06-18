@@ -190,6 +190,21 @@
         "type": "github"
       }
     },
+    "nur": {
+      "locked": {
+        "lastModified": 1718745406,
+        "narHash": "sha256-xwI1XjGDshqJ7MZOjmzmXgilFb1mmjtZ2H6dvF9pG9Q=",
+        "owner": "nix-community",
+        "repo": "NUR",
+        "rev": "84f4f03db94a5de088cb53db6447cb6ee696dbfd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "NUR",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "disko": "disko",
@@ -197,7 +212,8 @@
         "impermanence": "impermanence",
         "nix-gaming": "nix-gaming",
         "nixos-cosmic": "nixos-cosmic",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_2",
+        "nur": "nur"
       }
     }
   },

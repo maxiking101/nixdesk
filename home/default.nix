@@ -2,6 +2,9 @@
 {
   imports = [
     ./persistence.nix
+    ./packages.nix
+    ./git.nix
+    ./firefox.nix
   ];
   home = {
     username = "max";

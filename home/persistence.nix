@@ -17,10 +17,14 @@
         directory = ".local/share/Steam";
         method = "symlink";
       }
+      ".config/cosmic"
+      ".config/Proton Pass"
+      ".cache/mozilla/firefox/max"
     ];
     files = [
       ".screenrc"
+      ".bash_history"
     ];
-    allowOther = true;
+        allowOther = true;
   };
 }

@@ -18,14 +18,18 @@
       url = "github:lilyinstarlight/nixos-cosmic";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nur.url = github:nix-community/NUR;
   };
 
-  outputs = { self, nixpkgs, disko, impermanence, home-manager, nixos-cosmic, nix-gaming, ... }@inputs:
+  outputs = { self, nixpkgs, disko, impermanence, home-manager, nixos-cosmic, nix-gaming, nur, ... }@inputs:
   let
     system = "x86_64-linux";
     pkgs = import nixpkgs {
       inherit system;
       config.allowUnfree = true;
+      overlays = [
+        nur.overlay
+      ];
     };
     lib = nixpkgs.lib;
   in  

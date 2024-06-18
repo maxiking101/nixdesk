@@ -62,6 +62,7 @@
     font = "Lat2-Terminus16";
     keyMap = "de";
   };
+  services.xserver.xkb.layout = "de";
   
   networking.hostId = "41d6650b";
   system.stateVersion = "24.05";
