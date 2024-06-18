@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
-  home.persistence."/persistent/home/max" = {
+  home.persistence."/persist/home/max" = {
     directories = [
       "Downloads"
       "Music"
