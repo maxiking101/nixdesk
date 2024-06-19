@@ -9,5 +9,6 @@
     ./dunst.nix
     ./qt.nix
     ./wpapaerd.nix
+    ./waybar.nix
   ];
 }
