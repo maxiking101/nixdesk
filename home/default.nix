@@ -8,6 +8,7 @@
     ./labwc
     ./vscode.nix
     ./alacritty.nix
+    ./wezterm.nix
   ];
   home = {
     username = "max";
