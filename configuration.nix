@@ -13,6 +13,7 @@
       ./cosmic.nix
       ./gaming.nix
       ./labwc.nix
+      ./stylix.nix
     ];
   boot.loader.grub = {
     enable = true;

@@ -19,9 +19,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nur.url = github:nix-community/NUR;
+    stylix.url = "github:danth/stylix";
   };
 
-  outputs = { self, nixpkgs, disko, impermanence, home-manager, nixos-cosmic, nix-gaming, nur, ... }@inputs:
+  outputs = { self, nixpkgs, disko, impermanence, home-manager, nixos-cosmic, nix-gaming, nur, stylix, ... }@inputs:
   let
     system = "x86_64-linux";
     pkgs = import nixpkgs {
@@ -46,6 +47,7 @@
         nix-gaming.nixosModules.pipewireLowLatency
         nix-gaming.nixosModules.platformOptimizations
         nixos-cosmic.nixosModules.default
+        stylix.nixosModules.stylix
         ./configuration.nix
         home-manager.nixosModules.home-manager {
           home-manager.useGlobalPkgs = true;

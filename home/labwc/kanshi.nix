@@ -11,9 +11,22 @@
         };
       }
       {
+        output = {
+          criteria = "DP-2";
+          mode = "1920x1080@60Hz";
+          adaptiveSync = false;
+        };
+      }
+      {
         profile = {
           name = "main-only";
           outputs = [ { criteria = "DP-1"; } ];
+        };
+      }
+      {
+        profile = {
+          name = "both";
+          outputs = [ { criteria = "DP-1"; } { criteria = "DP-2"; } ];
         };
       }
     ];
