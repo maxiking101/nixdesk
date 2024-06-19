@@ -14,12 +14,13 @@
       ".local/share/keyrings"
       ".local/share/direnv"
       {
-        directory = ".local/share/Steam";
+       directory = ".local/share/Steam";
         method = "symlink";
       }
       ".config/cosmic"
       ".config/Proton Pass"
       ".cache/mozilla/firefox/max"
+      ".config/pulse"
     ];
     files = [
       ".screenrc"
