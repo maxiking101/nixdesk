@@ -12,6 +12,7 @@
       ./persistence.nix
       ./cosmic.nix
       ./gaming.nix
+      ./labwc.nix
     ];
   boot.loader.grub = {
     enable = true;

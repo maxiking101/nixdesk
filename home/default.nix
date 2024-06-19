@@ -5,6 +5,8 @@
     ./packages.nix
     ./git.nix
     ./firefox.nix
+    ./labwc
+    ./vscode.nix
   ];
   home = {
     username = "max";

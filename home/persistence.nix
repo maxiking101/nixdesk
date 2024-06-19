@@ -20,6 +20,7 @@
       ".config/cosmic"
       ".config/Proton Pass"
       ".cache/mozilla/firefox/max"
+      ".mozilla/firefox/max/storage"
       ".config/pulse"
     ];
     files = [
