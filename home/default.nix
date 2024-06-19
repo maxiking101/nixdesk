@@ -7,6 +7,7 @@
     ./firefox.nix
     ./labwc
     ./vscode.nix
+    ./alacritty.nix
   ];
   home = {
     username = "max";
