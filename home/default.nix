@@ -9,6 +9,7 @@
     ./vscode.nix
     ./alacritty.nix
     ./wezterm.nix
+    ./shell.nix
   ];
   home = {
     username = "max";
