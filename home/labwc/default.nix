@@ -4,6 +4,7 @@
     # ./menu.nix
     ./rc.nix
     ./environment.nix
+    ./theme.nix
     ./kanshi.nix
     ./autostart.nix
     ./dunst.nix
