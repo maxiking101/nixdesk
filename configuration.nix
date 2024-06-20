@@ -32,8 +32,10 @@
     description = "max";
     extraGroups = [ "networkmanager" "wheel" ];
     initialPassword = "12345";
+    shell = pkgs.zsh;
   };
   programs.fuse.userAllowOther = true;
+  programs.zsh.enable = true;
   
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
@@ -65,6 +67,9 @@
     keyMap = "de";
   };
   services.xserver.xkb.layout = "de";
+
+  # Get completion for system packages
+  environment.pathsToLink = [ "/share/zsh" ];
   
   networking.hostId = "41d6650b";
   system.stateVersion = "24.05";

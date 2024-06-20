@@ -26,6 +26,7 @@
     files = [
       ".screenrc"
       ".bash_history"
+      ".zsh_history"
     ];
         allowOther = true;
   };
