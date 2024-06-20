@@ -25,6 +25,7 @@
     ];
     files = [
       ".screenrc"
+      ".config/labwc/menu.xml"
       ".bash_history"
       ".zsh_history"
     ];
