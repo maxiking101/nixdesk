@@ -10,10 +10,11 @@
       ./disko-config.nix
       ./nvidia.nix
       ./persistence.nix
-      ./cosmic.nix
+      # ./cosmic.nix
       ./gaming.nix
       ./labwc.nix
       ./stylix.nix
+      ./greetd.nix
     ];
   boot.loader.grub = {
     enable = true;
