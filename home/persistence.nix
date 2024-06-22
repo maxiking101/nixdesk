@@ -21,7 +21,7 @@
       ".config/Proton Pass"
       ".cache/mozilla/firefox/max"
       ".mozilla/firefox/max"
-      ".config/pulse"
+      { directory = ".local/state/wireplumber"; method = "symlink"; }
     ];
     files = [
       ".screenrc"
