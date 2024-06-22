@@ -72,6 +72,8 @@
 
   # Get completion for system packages
   environment.pathsToLink = [ "/share/zsh" ];
+
+  networking.networkmanager.enable = true;
   
   networking.hostId = "41d6650b";
   system.stateVersion = "24.05";
