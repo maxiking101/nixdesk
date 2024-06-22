@@ -22,6 +22,7 @@
       ".cache/mozilla/firefox/max"
       ".mozilla/firefox/max"
       { directory = ".local/state/wireplumber"; method = "symlink"; }
+      ".config/Code/User/globalStorage"
     ];
     files = [
       ".screenrc"
