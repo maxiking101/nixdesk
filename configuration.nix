@@ -23,6 +23,7 @@
     mirroredBoots = [
       { devices = [ "nodev"]; path = "/boot"; }
     ];
+    useOSProber = true;
   };
   boot.initrd.postDeviceCommands = lib.mkAfter ''
     zfs rollback -r zroot/root@blank
